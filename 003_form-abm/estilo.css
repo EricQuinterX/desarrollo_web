@@ -1,0 +1,53 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #fab47c;
+  font-family: sans-serif;
+}
+
+#encabezado {
+  background-color: #6da4d7;
+  margin-bottom: 1em;
+  padding: 2em;
+}
+
+#navegacion ul li {
+  background-color: #698e34;
+  display: inline-block;
+}
+
+
+#formulario {
+  margin: 2em;
+  width: 50%;
+  line-height: 240%;
+  float: left;
+}
+
+.datos {
+  width: 30%;
+  line-height: 10px;
+}
+
+#tabla {
+  background-color: #6bb8ff;
+  float: left;
+  height: 50%;
+  width: 40%;
+}
+
+#tabla th {
+  margin: 15px 50px;
+  width: 150px;
+}
+
+#tabla .radio {
+  width: 10px;
+}
+
+#tabla tbody tr {
+  background-color: white;
+}

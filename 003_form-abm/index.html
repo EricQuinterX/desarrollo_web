@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <script src="logica.js"></script>
+  <title>ABM Usuarios</title>
+</head>
+<body onload="Listar()">
+  <header id="encabezado">
+    <h1>Bienvenido al ABM de Usuarios</h1>
+  </header>
+  <nav id="navegacion">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Productos</a></li>
+      <li><a href="#">Descargas</a></li>
+      <li><a href="#">Documentacion</a></li>
+      <li><a href="#">Soporte</a></li>
+    </ul>
+  </nav>
+  <form id="formulario" action="#" method="post">
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" id="nombre" class="datos" value=""> <br>
+    <label for="apellido">Apellido</label>
+    <input type="text" name="surname" id="apellido" class="datos" value=""> <br>
+    <input type="submit" name="btn-agregar" value="Agregar" onclick="Agregar();">
+    <input type="submit" name="btn-editar" value="Editar" onclick="Editar();">
+    <input type="submit" name="btn-eliminar" value="Eliminar" onclick="Eliminar();">
+    <input type="submit" name="btn-listar" value="Listar" onclick="Listar();">
+  </form>
+  <table id="tabla">
+    <thead>
+      <tr>
+        <th class="radio">-</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</body>
+</html>

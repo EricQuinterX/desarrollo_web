@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="logica.js" charset="utf-8"></script>
+  <title>ABM de Productos</title>
+</head>
+<body onload="cargarComponentes()">
+  <header id="encabezado">
+    <h1>ABM de Productos</h1>
+  </header>
+  <section id="contenido">
+    <form action="#" id="formulario">
+      <label for="">Codigo Nro.</label>
+      <input type="text" id="form-cod-prod" placeholder="ej: 99999999">
+      <div id="form-error-cod"></div>
+      <br>
+      <label for="">Nombre</label>
+      <input type="text" id="form-name-prod">
+      <div id="form-error-name"></div>
+      <br>
+      <label for="">Descripcion</label><br>
+      <textarea id="form-desc-prod" maxlength="150"></textarea>
+      <div id="form-error-desc"></div>
+      <br>
+      <label for="">Fecha de expiracion</label>
+      <input type="date" id="form-fec-exp-prod">
+      <div id="form-error-fec-exp"></div>
+      <br>
+      <label for="">Stock Disponible</label>
+      <input type="number" id="form-stock-prod">
+      <div id="form-error-stock"></div>
+      <br>
+      <button type="button" id="btn-agregar" name="button">Agregar</button>
+      <button type="button" id="btn-editar" name="button">Editar</button>
+      <button type="button" id="btn-eliminar" name="button">Eliminar</button>
+      <button type="button" id="btn-limpiar" name="button">Limpiar</button>
+    </form>
+    <div id="marco-tabla">
+      <table id="tabla">
+        <thead>
+          <tr>
+            <th>*</th>
+            <th>Codigo</th>
+            <th>Nombre</th>
+            <th>Fecha Exp.</th>
+            <th>Stock</th>
+            <th>Descripcion</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</body>
+</html>

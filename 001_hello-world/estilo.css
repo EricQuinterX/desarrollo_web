@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #c7ff95
+}
+
+h1,h2,h3 {
+  margin: 10px;
+  color: #2b2b27
+}
+
+p.parrafo {
+  margin: 1em;
+  color: #444;
+  font-family: sans-serif;
+  line-height: 130%;
+}
+
+.tema {
+  width: 70%;
+}
+
+.imagen {
+  width: 30%;
+  float: right;
+}
+.imagen > img {
+  margin: 15px;
+}

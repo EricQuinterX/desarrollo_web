@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <script src="logica.js"></script>
+  <title>Procesador</title>
+</head>
+<body>
+  <h1>Bienvenido al Procesador</h1>
+  <section>
+    <p>Elija una opcion: </p>
+    <div class="datos">
+      <div class="campos">
+        A = <input type="text" id="k1"> <br>
+        B = <input type="text" id="k2"> <br>
+      </div>
+      <div class="accion">
+        <input type="submit" value="=" onclick="calcular();">
+      </div>
+    </div>
+    <form id="operaciones" action="#" method="post">
+        <div class="opc-col1">
+          <input type="radio" name="accion" value="1" checked>Sumar <br>
+          <input type="radio" name="accion" value="2">Restar <br>
+          <input type="radio" name="accion" value="3">Multiplicar<br>
+          <input type="radio" name="accion" value="4">Dividir <br>
+        </div>
+        <div class="opc-col2">
+          <input type="radio" name="accion" value="5">Concatenar <br>
+          <input type="radio" name="accion" value="6">Son Iguales <br>
+          <input type="radio" name="accion" value="7">Es mayor <br>
+          <input type="radio" name="accion" value="8">Es menor <br>
+        </div>
+    </div>
+  </section>
+</body>
+</html>

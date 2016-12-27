@@ -1,0 +1,36 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #a7cbe3;
+  color: #4f484a;
+}
+
+section {
+  width: 50%;
+}
+
+#operaciones {
+  margin: 10px;
+  width: 50%;
+}
+
+.datos {
+  float: right;
+}
+
+.datos > div {
+  margin: 10px;
+}
+
+.opc-col1, .opc-col2 {
+  float: left;
+  width: 40%;
+}
+
+.campos {
+  float: right;
+  line-height: 2em;
+}
+.campos > input {
+  width: 50%;
+}

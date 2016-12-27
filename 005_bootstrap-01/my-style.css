@@ -1,0 +1,27 @@
+header {
+  margin-top: 2em;
+}
+
+header.container {
+  background-color: #5ee852;
+  color: yellow;
+  font-size: 2em;
+}
+
+.row {
+  /*background-color: lightblue;*/
+  /*margin-left: 1em;*/
+}
+
+.my-cols > .col-sm-3 {
+  border: solid 1px black;
+  margin: 1em;
+}
+
+.x {
+  margin-left: 2em;
+}
+
+.my-navbar-brand {
+  font-size: 1.5em;
+}
