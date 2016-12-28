@@ -9,13 +9,11 @@ header.container {
 }
 
 .row {
-  /*background-color: lightblue;*/
-  /*margin-left: 1em;*/
+  margin-top: 2em;
 }
 
-.my-cols > [class*='col-'] {
-  border: solid 1px black;
-  margin: 1em;
+.mi-parrafo {
+
 }
 
 .x {
