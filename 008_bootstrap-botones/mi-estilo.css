@@ -1,3 +1,18 @@
 .encabezado {
   font-size: 30px;
 }
+
+.vcenter {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+    .row.vcenter {
+        display: block; /* turn off the flexible box layout, asi bootstrap se activa */
+    }
+}
+
+.cruz {
+  width: auto;
+}
