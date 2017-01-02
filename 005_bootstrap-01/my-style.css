@@ -23,3 +23,7 @@ header.container {
 .my-navbar-brand {
   font-size: 1.5em;
 }
+
+.aux {
+  background-color: green;
+}

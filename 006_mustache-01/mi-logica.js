@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $('button').on('click', mostrarMustache);
+  $('button').on('click.mostrar', mostrarMustache);
 
 });
 
@@ -30,22 +30,29 @@ var clientes = [
 ];
 
 var mostrarMustache = function(){
-  var view = '';
-  var $root = $('#mustache-table');
-  // $('#mustache-table').append($("table")).addClass('table table-default'));
-  $root.append(
-      $('<table></table>').addClass('table mi-tabla table-striped').append('<thead></thead>').append('<tbody></tbody>')
+    var view = '';
+    var $root = $('#mustache-table');
+    $root.append( $("<table>").addClass("table mi-tabla table-striped").append("<thead>").append("<tbody>") );
+    $root.find('thead').append($("<tr>")
+        .append($("<th>").text("Nro"))
+        .append($("<th>").text("Codigo"))
+        .append($("<th>").text("Nombre"))
+        .append($("<th>").text("DNI"))
+        .append($("<th>").text("Saldo"))
     );
-  $root.find('thead').append('<tr><th>Nro</th><th>Codigo</th><th>Nombre</th><th>DNI</th><th>Saldo</th></tr>');
-  for (var i = 0; i < clientes.length; i++) {
-    var c = {
-      nro: i+1,
-      alert: (clientes[i].saldo < 0) ? 'danger' : 'success',
-      cliente: clientes[i]
-      };
-    view += Mustache.render(
-      '<tr class="{{alert}}"><td>{{nro}}</td>{{#cliente}}<td>{{codigo}}</td><td>' +
-      '{{nombre}}</td><td>{{dni}}</td><td>{{saldo}}</td>{{/cliente}}</tr>',c);
-  }
-  $root.find('tbody').html(view);
+
+    for (var i = 0; i < clientes.length; i++) {
+        var c = {
+            nro: i+1,
+            alert: (clientes[i].saldo < 0) ? 'danger' : 'success',
+            cliente: clientes[i]
+        };
+        view += Mustache.render(
+            '<tr class="{{alert}}"><td>{{nro}}</td>{{#cliente}}<td>{{codigo}}</td><td>' +
+            '{{nombre}}</td><td>{{dni}}</td><td>{{saldo}}</td>{{/cliente}}</tr>',c);
+    }
+
+    $root.find('tbody').html(view);
+
+    $('button').off('click.mostrar');
 }
