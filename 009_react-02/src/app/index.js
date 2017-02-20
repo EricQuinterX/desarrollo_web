@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends React.Component {
   render() {
@@ -11,4 +12,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+ReactDOM.render(<App />, document.getElementById('contenido'));
