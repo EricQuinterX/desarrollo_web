@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {HelloPlanet} from './components/HelloPlanet';
+import {Todo} from './components/main';
 
-var myObj = {
-    myFavNumber: 0
+var tasksList = ["Task 1", "Task 2", "Task 3"];
+
+var tasks = localStorage.getItem('storedTasks');
+
+if (tasks) {
+    tasksList = JSON.parse(tasks);
 }
 
 ReactDOM.render(
-    <div>
-        <HelloPlanet name="Earth" />
-    </div>,
-    document.getElementById('firstApp')
+    <Todo tasks={tasksList} />,
+    document.getElementById('todo')
 )
